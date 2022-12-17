@@ -1,1 +1,396 @@
+* {
+    box-sizing: border-box;
+}
 
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+h3{
+    margin: 0;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
+}
+
+.container-wrap{
+    background: url(bgp.jpg);
+    background-size: cover;
+}
+
+.main-nav li {
+    padding: 0 5%;
+    color: #ffffff;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
+.container-wrap{
+    display: flex;
+}
+
+.shop-item-details p{
+   color:black;
+}
+
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}
+
+.band-name span{
+    color:white;
+    font-size:18px;
+}
+
+.band-name-large {
+    font-size: 8em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 1.5em;
+    width: 50%;
+}
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    font-size: 2.5em;
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7));
+}
+
+.about-band-image {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.main-footer, header {
+    background-color: #e3683b;
+    color: white;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    padding-left: 20px;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+    margin:0;
+    padding-top:5px;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.company-logo{
+    margin-top: 0;
+    background-color: white;
+    padding: 2px 7px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 14px;
+    color: #e26434 !important;
+    font-weight: bold;
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #e3683b;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #df5624;
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+    border: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date {
+    color: #555;
+    width: 11%;
+    font-weight: bold;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+.shop-item {
+    margin: 30px;
+    background:linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7));
+    padding: 15px 0;
+    border-radius: 6px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 15px;color: black;
+    border-bottom: 1px solid #e26434;
+}
+
+.shop-item-image {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #ffffff;
+    margin-bottom: 10px;
+    color:#e26434;
+    font-weight: bold;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: ffffff;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7));
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: black;
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7));
+}
+
+.cart-quantity {
+    width: 35%;
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7));
+}
+
+.cart-item-title {
+    color: black;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: black;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: black;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.5em;
+}
+
+/* width */
+.shop-items::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  .shop-items::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .shop-items::-webkit-scrollbar-thumb {
+    background: #e26434; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .shop-items::-webkit-scrollbar-thumb:hover {
+    background: #e26434; 
+  }
