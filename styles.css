@@ -39,6 +39,14 @@ h3{
     background-size: cover;
 }
 
+.container-wrap section{
+    width:60%;
+}
+
+.container-wrap aside{
+    width:40%;
+}
+
 .main-nav li {
     padding: 0 5%;
     color: #ffffff;
