@@ -89,7 +89,7 @@ h3{
 .container {
     margin: 0 auto;
     padding: 0 1.5em;
-    width: 50%;
+    width: 70%;
 }
 .section-header {
     font-family: "Metal Mania";
@@ -125,6 +125,9 @@ h3{
     text-align: end;
     margin:0;
     padding-top:5px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .footer-nav li {
@@ -346,7 +349,7 @@ h3{
     padding: 0;
     text-align: center;
     font-size: 1.2em;
-    margin-right: 25px;
+    margin-right: 10px;
 }
 
 .cart-row:last-child {
@@ -401,4 +404,11 @@ h3{
   /* Handle on hover */
   .shop-items::-webkit-scrollbar-thumb:hover {
     background: #e26434; 
+  }
+
+
+  @media screen and (max-width: 490px) {
+    .cart-column{
+        margin-right: 0.6em;
+    }
   }
